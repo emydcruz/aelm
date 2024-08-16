@@ -1,0 +1,52 @@
+import time
+
+# Isso serve para mostrar olá mundo
+
+# O código abaixo mostra uma saudação
+
+
+#Tive que mover o menu para cá (aba de funcoes)
+def menu():
+    print("Como posso ajudar?")
+    print("1 - Impala")
+    print("2 - Risqué")
+    print("3 - Colorama")
+
+    # Aqui solicita um número inteiro
+    opcao = int(input("Escolha a opção desejada: "))
+
+    """ Bloco de condição (se isso, se aquilo... ou se erro)
+    
+    tive que indentar os "IFs"" para posição do menu """
+    
+    if opcao == 1:
+        print("Impala: paraíso, serena, gatinha")
+    elif opcao == 2:
+        print("Risqué: lágrimas de vênus, rebu, carmim")
+    elif opcao == 3:
+        print("Colorama: 40 graus, branco lunar, nude")
+    else:
+        print("Não há essa opção")
+        
+        
+# programa inicia rodando aqui
+
+print("Seja bem-vindo")
+
+# solicita nome para guardar na variavel
+
+nome = input("Qual seu nome? ")
+
+# Corrigido a indentação do print
+print("Bem-vindo,", nome + "!")
+
+# Delay/pause por 5 segundos
+time.sleep(5)
+
+# Chama a função menu
+menu()
+
+""" uma idéia: da pra criar uma função de saudação () e chamar ela sempre que precisar
+
+Outro ponto é usar o "WHILE" para repetir o menu
+"""
