@@ -1,31 +1,34 @@
+import time
+
 #Isso serve para mostrar olá mundo
 
+# o código abaixo mostra uma saudação
 
-"""
-Este é um comentário 
-e mais um
-e outro  n"""
 
-print("Seja bem vindo ai")
+  print("Seja bem vindo")
 
-nome = input ("Qual seu nome?")
+nome = input("Qual seu nome?")
 
-print("bem vindo","nome")
-print("Posso ajudar?")
-print("1-gatinho preto")
-print("2-gatinho laranja")
-print("3-gatinho mesclado")
+   print("bem vindo",nome)
+time.sleep(5)
 
-opcao = int(input("Escolha um gatinho"))
+def menu():
+   print("Como posso ajudar?")
+   print("1-impala")
+   print("2-risqué")
+   print("3-colorama")
+
+opcao = int(input("escolha a opção desejada"))
 
 if opcao == 1:
-    print("gatinho preto")
-
+   print("impala:praíso, serena, gatinha")
 elif opcao == 2:
-    print("gatinho laranja")
-
+   print("risqué:lágrimas de vênus, rebu, carmin")
 elif opcao == 3:
-    print("gatinho mesclado")
+   print("colorama: 40 graus, branco lunar, nude")
 
-    else:
-        print("esse gatinho fugiu, escolhe outro.")
+else:
+   print("não há está opção")
+
+
+menu()
